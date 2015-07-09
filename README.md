@@ -8,8 +8,13 @@ user profile to stdout (also in JSON, see below), sorted in rank order.
 
 ## Input Format
 
-  * The 'importance' field is in the range [0,4] and is the index into an array that defines the weights as described in the OkCupid doc, e.g.: private static final int[] IMPORTANCE_POINTS = new int[]{0, 1, 10, 50, 250};
-  * Answers are always in the range [0,3]
+  * The _importance_ field is in the range __[0,4]__ and is the index into an array that defines the weights as described in the OkCupid doc. For instance:
+ ```c 
+ private static final int[] IMPORTANCE_POINTS = new int[]{0, 1, 10, 50, 250};
+ ```
+ 
+  * Answers are always in the range __[0,3]__.
+  
   * The size of the acceptable answer set is between 1 and 3; 0 and 4 are nonsensical.
 
 ## Output Format
